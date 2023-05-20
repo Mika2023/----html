@@ -260,12 +260,21 @@ a{
 .section-grid .grid .item .icon{
     width:50%;
     padding: 20px;
-    background-color: rgba(96, 119, 221, 0.582);
+    background-color: rgb(96, 119, 221);
     border-radius: 10px;
+    margin-top: -30px;
+    margin-bottom: 20px;
 }
 .section-grid .grid .item img{
     width: 100%;
 }
-.section-grid .grid .item .txt{
-    text-align: center;
+.section-grid .grid .item .txt h2{
+    text-transform: uppercase;
+    color:rgba(0, 0, 0, .5);
+    font-weight: 600px;
+}
+.section-grid .grid .item .txt p{
+    color:rgba(0, 0, 0, .5);
+    font-size: 14px;
+    
 }

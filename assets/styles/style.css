@@ -39,7 +39,12 @@
 .ali-end{
     align-items: flex-end;
 }
-
+.wrap{
+    flex-wrap: wrap;
+}
+.grid{
+    display: grid;
+}
 #auth_page {
     background: url(../imgs/1671949510_3-47.jpg);
     background-size: cover;
@@ -47,7 +52,10 @@
     display: flex;
     align-items: center;
 }
-
+a{
+    text-decoration: none;
+    color: white;
+}
 #Form1 {
     background: #ff1500cc;
     width: 500px;
@@ -120,8 +128,7 @@
     url(../imgs/1671949510_3-47.jpg);
     background-size: cover;
     display: flex;
-    /* убрать потом */
-    height: 100vh;
+    padding-bottom: 20px;
 }
 
 .section-welcome .container{
@@ -153,7 +160,7 @@
     flex-direction: column;
     text-align:center;
     color: #4edef1cc;
-    margin:200px auto;
+    margin:200px auto 0 auto;
 }
 .section-welcome .container:nth-child(2) h2{
     color:rgba(101, 103, 236, 0.952);
@@ -166,4 +173,99 @@
     
     font-weight: 800;
     font-size: 56px;
+}
+.section-welcome .container:nth-child(2) .row .line{
+    width: 100%;
+    height: 3px;
+    background-color: rgb(171, 206, 219);
+}
+.section-welcome .container:nth-child(2) .row{
+    margin-top: 100px;
+}
+
+.section-welcome .container:nth-child(2) .row .col-3{
+    padding: 0 10px;
+    text-align: start;
+    color: white;
+}
+.section-welcome .container:nth-child(2) .row .line::after{
+    display: block;
+    transition: .8s;
+    content: " ";
+    width: 50%;
+    height: 3px;
+    background-color: rgb(75, 109, 184);
+}
+.section-welcome .container:nth-child(2) .row .col-3:hover .line::after{
+    transition: .5s;
+    display: block;
+    content: " ";
+    width: 90%;
+    height: 3px;
+    background-color: rgb(75, 109, 184);
+}
+.section-services{
+    margin: 50px 0;
+}
+.section-services .item{
+    width: 15%;
+    margin: 0 20px;
+    background-color: white;
+    box-shadow: 5px 5px 20px 1px rgba(54, 219, 231, 0.904);
+    border-radius: 10px ;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.section-services .item:hover{
+    transform: scale(1.2);
+    z-index: 100;
+}
+.section-services .item i{
+    font-size: 100px;
+    margin: 0 auto;
+}
+.section-services .item h2{
+    font-size: 20px;
+    text-align:center;
+    margin-top: 20px;
+}
+.section-grid .grid{
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 20px 30px;
+}
+.section-grid .grid .item{
+    background-color: rgba(127, 255, 244, 0.582);
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(103, 215, 230);
+}
+.section-grid .grid .item:nth-child(1){
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.section-grid .grid .item:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.section-grid .grid .item:nth-child(3){
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 3;
+}
+.section-grid .grid .item:nth-child(4){
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+}
+.section-grid .grid .item .icon{
+    width:50%;
+    padding: 20px;
+    background-color: rgba(96, 119, 221, 0.582);
+    border-radius: 10px;
+}
+.section-grid .grid .item img{
+    width: 100%;
+}
+.section-grid .grid .item .txt{
+    text-align: center;
 }

@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.row{
+    display: flex;
+}
+.col-3{
+    width:25%;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+.fd-column{
+    flex-direction: column;
+}
+.jc-center{
+    justify-content: center;
+}
+.jc-end{
+    justify-content: end;
+}
+.jc-between{
+        justify-content: space-between;
+}
+.jc-around{
+    justify-content: space-around;
+}
+.ali-center{
+    align-items: center;
+}
+.ali-end{
+    align-items: flex-end;
+}
+
+#auth_page {
+    background: url(../imgs/1671949510_3-47.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#Form1 {
+    background: #ff1500cc;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.749);
+}
+
+.auth-form button,
+.auth-form input {
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 2px solid rgb(164, 51, 9);
+}
+
+.auth-form input {
+    transition: 1s;
+    outline: 3px solid rgba(91, 21, 157, 0);
+}
+
+.auth-form input:focus {
+    transition: .5s;
+    outline: 3px solid rgb(91, 21, 157);
+}
+
+.auth-form input::placeholder {
+    color: rgb(255, 93, 11);
+}
+
+.auth-form button {
+    width: 50%;
+    align-self: center;
+    color: rgb(255, 93, 11);
+    font-weight: 600;
+}
+
+.auth-form button:hover:active {
+    background-color: #ccc;
+    color: rgb(255, 93, 11);
+}
+
+.auth-form button:hover {
+    cursor: pointer;
+    background-color: orangered;
+    color: white;
+    transition: 1s;
+}
+
+.auth-form h1 {
+    transition: 1s;
+    text-align: center;
+}
+
+.auth-form:hover h1 {
+    transition: .5s;
+    color: rgb(229, 204, 252);
+}
+
+.section-welcome{
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), 
+    url(../imgs/1671949510_3-47.jpg);
+    background-size: cover;
+    display: flex;
+    /* убрать потом */
+    height: 100vh;
+}
+
+.section-welcome .container{
+    display: flex;
+}
+.section-welcome img{
+    width: 10%;
+}
+.section-welcome .navigation ol{
+    display: flex;
+    list-style: none;
+}
+.section-welcome .navigation a{
+    color:rgb(121, 199, 212);
+    text-decoration: none;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.section-welcome .navigation{
+    padding: 20px;
+}
+.section-welcome .logo{
+    display: flex;
+    align-items: flex-start;
+}
+
+.section-welcome .container:nth-child(2){
+    flex-direction: column;
+    text-align:center;
+    color: #4edef1cc;
+    margin:200px auto;
+}
+.section-welcome .container:nth-child(2) h2{
+    color:rgba(101, 103, 236, 0.952);
+    padding:0 10%;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 30px;
+}
+.section-welcome .container:nth-child(2) h1{
+    
+    font-weight: 800;
+    font-size: 56px;
+}
